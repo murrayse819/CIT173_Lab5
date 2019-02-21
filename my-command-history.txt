@@ -1,0 +1,386 @@
+    1  ls
+    2  ls -l
+    3  mkdir CIT173_Lab4
+    4  ls
+    5  ls -l /dev
+    6  ls -l /dev > ~/CIT173_Lab4/my-dev-nodes.txt
+    7  cd CIT173_Lab4/
+    8  ls
+    9  cat my-dev-nodes.txt | /dev/full
+   10  sudo cat my-dev-nodes.txt | /dev/full
+   11  cat my-dev-nodes.txt 
+   12  cat my-dev-nodes.txt > /dev/full
+   13  man head
+   14  head -c 1024 /dev/random > my-random-data.txt
+   15  cat my-random-data.txt 
+   16  lsmod
+   17  lsmod > my-modules-1.txt
+   18  cat my-modules-1.txt 
+   19  modinfo nfs
+   20  modinfo nfs > my-nfs-info.txt
+   21  ls
+   22  ls -l
+   23  modprobe nfs
+   24  modinfo nfs
+   25  modprobe /lib/modules/4.18.16-300.fc29.x86_64/kernel/fs/nfs/.ko
+   26  modprobe /lib/modules/4.18.16-300.fc29.x86_64/kernel/fs/nfs/
+   27  insmod nfs
+   28  ls
+   29  lsmod
+   30  cd ..
+   31  ls
+   32  sudo -i
+   33  pwd
+   34  cd /home
+   35  ls
+   36  cd scottmurray
+   37  pwd
+   38  ls
+   39  lsmod
+   40  modinfo nfs
+   41  modprobe nfs4
+   42  sudo modprobe nfs4
+   43  lsmod
+   44  lsmod | less
+   45  ls
+   46  cd CIT173_Lab4/
+   47  lsmod > my-modules-2.txt
+   48  sudo rmmod nfs4
+   49  lsmod
+   50  rmmod nfs4
+   51  rmmod nfs
+   52  sudo rmmod nfs
+   53  lsmod
+   54  lsmod > my-modules-3.txt
+   55  exit
+   56  gdisk
+   57  sudo /dev/sdb
+   58  sudo gdisk /dev/sdb
+   59  cat /dev
+   60  /dev
+   61  cd /dev
+   62  ls
+   63  ls -l
+   64  ls -l > ~/CIT173_Lab4/my-new-dev-nodes.txt
+   65  mkfs.ext4 /dev/sdb1
+   66  sudo mkfs.ext4 /dev/sdb1
+   67  sudo mkfs.ext4 /dev/sdb2
+   68  cd /mnt
+   69  ls
+   70  mkdir data
+   71  sudo mkdir data
+   72  sudo mkdir backup
+   73  ls
+   74  fsck.ext4 /dev/sdb1
+   75  sudo fsck.ext4 /dev/sdb1
+   76  sudo fsck.ext4 /dev/sdb2
+   77  sudo mount /dev/sdb1 /mnt/data
+   78  sudo mount /dev/sdb2 /mnt/backup/
+   79  mount
+   80  mount > ~/CIT173_Lab4/my-mounts.txt
+   81  df
+   82  df > ~/CIT173_Lab4/my-disk-usage.txt
+   83  umount /dev/sdb1
+   84  sudo umount /dev/sdb1
+   85  sudo umount /dev/sdb2
+   86  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+   87  cd ~/CIT173_Lab4/
+   88  git init
+   89  git remote add origin https://github.com/murrayse819/CIT173_Lab4.git
+   90  git add --all
+   91  git commit -m "Lab assignment 4"
+   92  git push origin master
+   93  cd ..
+   94  pwd
+   95  mkdir CIT173_Lab5
+   96  ls
+   97  /etc/fstab
+   98  sudo /etc/fstab
+   99  pwd
+  100  cat /etc/fstab
+  101  sudo cat /etc/fstab
+  102  cd mnt
+  103  cd /dev
+  104  ls
+  105  cd etc/fstab
+  106  cd /etc/fstab
+  107  cd /etc
+  108  ls
+  109  less ls
+  110  ls | less
+  111  cat fstab
+  112  cat cd ~/
+  113  cd ..
+  114  pwd
+  115  cd /home/scott
+  116  cd -
+  117  cd /home
+  118  ls
+  119  cd /scottmurray
+  120  cd ~/
+  121  pwd
+  122  sudo mount -a /etc/fstab /mnt/data
+  123  cd /mnt
+  124  ls
+  125  ls -l
+  126  cd /mnt
+  127  ls
+  128  history
+  129  cd ~/
+  130  mount
+  131  mount /dev/sdb1 /mnt/data
+  132  sudo mount /dev/sdb1 /mnt/data
+  133  mount
+  134  umount /mnt/data
+  135  sudo umount /mnt/data
+  136  mount
+  137  sudo /etc/fstab -a /deb/sdb1 /mnt/data
+  138  man fstab
+  139  libmount /etc/fstab
+  140  libmount
+  141  man libmount
+  142  cat fstab
+  143  cd /lib
+  144  ls
+  145  cd ..
+  146  cat /etc/fstab
+  147  ls /
+  148  ps
+  149  ps -a
+  150  ps -l
+  151  ps
+  152  ps --all
+  153  man ps
+  154  ps -e
+  155  cat /proc/699/status
+  156  ls cpu
+  157  lscpu
+  158  cat /proc/lscpu
+  159  cat /proc/modules
+  160  mount
+  161  cat /proc/mounts
+  162  cat /proc/version
+  163  uname
+  164  uname -a
+  165  cat /proc/version
+  166  man name
+  167  ls -l /sys
+  168  fdisk /dev/sdb
+  169  sudo fdisk /dev/sdb
+  170  df -Th
+  171  vi /etc/fstab
+  172  sudo nano /etc/fstab
+  173  nano /etc/fstab
+  174  sudo -E gedit /etc/fstab
+  175  cat /etc/fstab 
+  176  sudo -E gedit /etc/fstab
+  177  cat /etc/fstab 
+  178  exit
+  179  mount
+  180  cd ~/CIT173_Lab5
+  181  ls
+  182  mount > my-mounts.txt
+  183  ls
+  184  cat my-mounts.txt 
+  185  cat /etc/fstab
+  186  cat /etc/fstab > my-fstab.txt
+  187  ls
+  188  cat my-fstab.txt 
+  189  man random
+  190  man dd
+  191  ls /dev
+  192  cd /mnt/data
+  193  ls
+  194  grep data
+  195  cd ..
+  196  cd ~/
+  197  pwd
+  198  cd /
+  199  ls
+  200  cd mnt
+  201  ls
+  202  cd data
+  203  dd if=/dev/random of=data_file1.dat bs=1k count=1
+  204  sudo dd if=/dev/random of=data_file1.dat bs=1k count=1
+  205  ls
+  206  ls -l
+  207  cat data_file1.dat 
+  208  rm data_file1.dat 
+  209  sudo rm data_file1.dat 
+  210  ls
+  211  sudo dd if=/dev/random of=data_file1.dat bs=1000 count=1
+  212  man dd
+  213  dd --help
+  214  dd --help | less
+  215  lsblk
+  216  ls -l
+  217  sudo rm data_file1.dat 
+  218  ls - l
+  219  ls -l
+  220  sudo dd if=/dev/random of=data_file1.dat bs=1kB count=1
+  221  sudo rm data_file1.dat 
+  222  ls
+  223  sudo dd if=/dev/random of=data_file1.dat bs=1kB count=2
+  224  sudo rm data_file1.dat 
+  225  ls
+  226  sudo dd if=/dev/random of=data_file1.dat bs=1K count=1
+  227  sudo rm data_file1.dat 
+  228  sudo dd if=/dev/random of=data_file1.dat bs=1KB count=1
+  229  sudo rm data_file1.dat 
+  230  sudo dd if=/dev/random of=data_file1.dat bs=1KB count=10
+  231  sudo rm data_file1.dat 
+  232  sudo dd if=/dev/random of=data_file1.dat bs=1KB count=12
+  233  ls
+  234  ls -l
+  235  cat data_file1.dat 
+  236  sudo dd if=/dev/random of=data_file2.dat bs=1KB count=12
+  237  ls
+  238  ls-l
+  239  ls -l
+  240  cd ..
+  241  ls
+  242  cd backup
+  243  sudo dd if=/dev/random of=backup_file1.dat bs=1KB count=12
+  244  sudo dd if=/dev/random of=backup_file2.dat bs=1KB count=12
+  245  ls
+  246  ls -l
+  247  cd ~/
+  248  pwd
+  249  cd CIT173_Lab5
+  250  ls -lh /mnt/data/data.file.dat
+  251  ls -lh /root/mnt/data/data.file.dat
+  252  sudo ls -lh /root/mnt/data/data.file.dat
+  253  cd mnt
+  254  cd ..
+  255  cd mnt
+  256  cd /mnt
+  257  ls -l
+  258  cd /data
+  259  ls
+  260  cat data
+  261  cd data
+  262  ls -lh
+  263  man cp
+  264  ls
+  265  cp data_file1.dat ~/home/scottmurray/CIT173_Lab5
+  266  cp data_file1.dat ~/CIT173_Lab5
+  267  cd ~/
+  268  ls -l
+  269  cd CIT173_Lab5
+  270  ls
+  271  cd /mnt/data
+  272  ls
+  273  cp data_file2.dat ~/CIT173_Lab5
+  274  ls -lh ~/CIT173_Lab5
+  275  cd /mnt/backup/
+  276  cp backup_file1.dat ~/CIT173_Lab5
+  277  cp backup_file2.dat ~/CIT173_Lab5
+  278  ls -lh ~/CIT173_Lab5
+  279  ~/
+  280  cd ~/
+  281  df
+  282  cd CIT173_Lab5
+  283  df >  my-disk-usage.txt
+  284  ls -l
+  285  procfs
+  286  /proc/version
+  287  sudo /proc/version
+  288  ls -l /proc/version
+  289  cat /proc/version
+  290  ls
+  291  touch my-procfs.txt
+  292  ls
+  293  gedit my-procfs.txt 
+  294  cat my-p
+  295  cat my-procfs.txt 
+  296  ls-l
+  297  ls -l
+  298  gedit& my-procfs.txt
+  299  ls -l
+  300  ls-l
+  301  ls -l
+  302  man gedit 
+  303  gedit my-procfs.txt &
+  304  cat /proc/cpu
+  305  ls -l /proc
+  306  ls -l /proc | less
+  307  cd /
+  308  ls -l
+  309  cd /proc
+  310  ls -l
+  311  cd ..
+  312  ls
+  313  cd /proc
+  314  ls
+  315  cat proc/cpuinfo
+  316  cat /proc/cpuinfo
+  317  cat /proc/meminfo
+  318  ls
+  319  ps
+  320  cat /proc/3146/limits
+  321  cat /proc
+  322  ls
+  323  cat /proc/loadavg
+  324  ps
+  325  ps -e
+  326  cat /proc/1588/status
+  327  ls /proc
+  328  cat /proc/uptime
+  329  cat -a /proc/uptime
+  330  man cat
+  331  cat /proc/fb
+  332  ls -l /dev
+  333  ls /dev
+  334  cat /proc/fb
+  335  cat ~/CIT173_Lab5/my-procfs.txt 
+  336  cd ~/
+  337  sysfs
+  338  cat /sysfs
+  339  ls /sysfs
+  340  cd /
+  341  ls
+  342  cd ~
+  343  pwd
+  344  ls /sys
+  345  ls /sys/fs
+  346  ls /sys
+  347  ls /sys/class
+  348  ls /sys/class/leds
+  349  cat /sys/class/leds/input1::capslock
+  350  ls /sys/class/leds/input1::capslock
+  351  ls /sys/class/leds/input1::capslock/brightness
+  352  cat /sys/class/leds/input1::capslock/brightness
+  353  echo 1 | sudo tee '/sys/class/leds/input5::capslock/brightness'
+  354  echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  355  echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  356  echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  357  echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  358  ls /sys
+  359  ls /sys/class
+  360  ls /sys/class/leds
+  361  cat /sys/class/leds/input::capslock
+  362  cat /sys/class/leds/input1::capslock
+  363  ls /sys/class/leds/input1::capslock
+  364  cat /sys/class/leds/input1::capslock/brightness
+  365  echo 1 
+  366  echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  367  echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  368  ls /sys
+  369  ls /sys/class
+  370  ls /sys/class/leds
+  371  ls /sys/class/leds/input1::capslock
+  372  ls /sys/class/leds/input1::capslock/brightness
+  373  cat /sys/class/leds/input1::capslock/brightness
+  374  echo 1
+  375  echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  376  echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  377  ls
+  378  cd CIT173_Lab5
+  379  touch turn-on-capslock-led.txt
+  380  ls
+  381  gedit turn-on-capslock-led.txt &
+  382  cat turn-on-capslock-led.txt 
+  383  echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  384  echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  385  cat turn-on-capslock-led.txt 
+  386  history > my-command-history.txt

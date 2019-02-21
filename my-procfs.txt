@@ -1,0 +1,15 @@
+1, /proc/version, Linux version 4.18.16-300.fc29.x86_64
+2, /proc/cpuinfo, model name: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, cpu cores: 1, cache size: 8192 KB
+3, /proc/meminfo, MemTotal: 2016276 kB
+4, /proc/3146/limits, Max stack size: Soft Limit: 8388608, Hard Limit: unlimited, Units: bytes
+5, /proc/loadavg, 0.26 0.23 0.39 3/529 6118
+6, /proc/1588/status, nonvoluntary_ctxt_switches: 166
+7, /proc/uptime, 23186.91
+8, /proc/fb, 1 framebuffer: 0 svgadrmfb
+
+
+
+
+
+
+
